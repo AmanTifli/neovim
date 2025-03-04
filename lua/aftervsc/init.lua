@@ -1,2 +1,2 @@
 require("aftervsc.leap")
-require("aftervsc.comment")
+require("aftervsc.vscode")

@@ -6,7 +6,11 @@ require("mason-lspconfig").setup({
 local lspconfig = require("lspconfig")
 
 -- Setup clangd
-lspconfig.clangd.setup{}
+lspconfig.clangd.setup{
+    init_options = {
+        compilationDatabasePath = "./builddir",
+    },
+}
 
 -- Setup Lua LSP (lua_ls)
 lspconfig.lua_ls.setup{
